@@ -1,0 +1,304 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   RizonLux Gallery
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+      overflow-x: hidden;
+    }
+    .hidden-nav {
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .visible-nav {
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10 top-0" id="navbar">
+   <div class="container mx-auto px-4 py-6 flex justify-between items-center" style="padding-left: 10%; padding-right: 10%;">
+    <div class="text-2xl font-bold text-gray-800">
+     RizonLux
+    </div>
+    <div class="hidden md:flex space-x-8">
+     <a class="text-gray-600 hover:text-gray-800" href="index.html">
+      Inicio
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="services.html">
+      Serviços
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="gallery.html">
+      Galeria
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="pricing.html">
+      Preços
+     </a>
+    </div>
+    <a class="hidden md:block bg-green-600 text-white px-4 py-2 rounded-full" href="#">
+     Contact Us
+    </a>
+    <button class="md:hidden text-gray-800 focus:outline-none" id="menu-button">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden" id="mobile-menu">
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
+     About
+    </a>
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
+     Services
+    </a>
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
+     Gallery
+    </a>
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
+     Pricing
+    </a>
+    <a class="block px-4 py-2 bg-green-600 text-white rounded-full" href="#">
+     Contact Us
+    </a>
+   </div>
+  </nav>
+  
+
+
+
+  <!-- 1. Swiper com 5 fotos -->
+  <section class="py-40">
+    <h2 class="text-2xl font-bold text-center mb-4">Projetos em Destaque</h2>
+    <div class="flex overflow-x-auto space-x-4 px-4 justify-center">
+      <div class="flex-shrink-0 w-1/5 h-60 bg-gray-300 rounded-lg shadow-lg">
+        <img src="/path-to-image1.jpg" alt="Projeto 1" class="w-full h-full object-cover rounded-lg">
+      </div>
+      <div class="flex-shrink-0 w-1/5 h-60 bg-gray-300 rounded-lg shadow-lg">
+        <img src="/path-to-image2.jpg" alt="Projeto 2" class="w-full h-full object-cover rounded-lg">
+      </div>
+      <div class="flex-shrink-0 w-1/5 h-60 bg-gray-300 rounded-lg shadow-lg">
+        <img src="/path-to-image3.jpg" alt="Projeto 3" class="w-full h-full object-cover rounded-lg">
+      </div>
+      <div class="flex-shrink-0 w-1/5 h-60 bg-gray-300 rounded-lg shadow-lg">
+        <img src="/path-to-image4.jpg" alt="Projeto 4" class="w-full h-full object-cover rounded-lg">
+      </div>
+ 
+    </div>
+  </section>
+
+  <!-- 2. Galeria de Fotos em Grid -->
+  <section class="py-8">
+    <h2 class="text-2xl font-bold text-center mb-4">Galeria de Fotos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+      <img src="/path-to-image6.jpg" alt="Galeria 1" class="w-full h-60 object-cover rounded-lg shadow-lg">
+      <img src="/path-to-image7.jpg" alt="Galeria 2" class="w-full h-60 object-cover rounded-lg shadow-lg">
+      <img src="/path-to-image8.jpg" alt="Galeria 3" class="w-full h-60 object-cover rounded-lg shadow-lg">
+      <img src="/path-to-image9.jpg" alt="Galeria 4" class="w-full h-60 object-cover rounded-lg shadow-lg">
+      <img src="/path-to-image10.jpg" alt="Galeria 5" class="w-full h-60 object-cover rounded-lg shadow-lg">
+      <img src="/path-to-image11.jpg" alt="Galeria 6" class="w-full h-60 object-cover rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- 3. Antes e Depois -->
+  <section class="py-8">
+    <h2 class="text-2xl font-bold text-center mb-4">Antes e Depois</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4">
+      <div class="relative w-full h-60 rounded-lg shadow-lg">
+        <img src="/path-to-before-image.jpg" alt="Antes" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute top-2 left-2 bg-white text-black text-sm font-bold px-2 py-1 rounded">Antes</div>
+      </div>
+      <div class="relative w-full h-60 rounded-lg shadow-lg">
+        <img src="/path-to-after-image.jpg" alt="Depois" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute top-2 left-2 bg-white text-black text-sm font-bold px-2 py-1 rounded">Depois</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Destaques Recentes Swiper -->
+  <section class="py-12">
+    <h2 class="text-2xl font-bold text-center mb-4">Destaques Recentes</h2>
+    <div class="flex overflow-x-auto space-x-4 px-4 justify-center">
+      <div class="flex-shrink-0 w-1/5 h-60 rounded-lg shadow-lg">
+        <img src="/path-to-image12.jpg" alt="Destaque 1" class="w-full h-full object-cover rounded-lg">
+        <p class="mt-2 text-center text-sm font-medium">Projeto 1</p>
+      </div>
+      <div class="flex-shrink-0 w-1/5 h-60 rounded-lg shadow-lg">
+        <img src="/path-to-image13.jpg" alt="Destaque 2" class="w-full h-full object-cover rounded-lg">
+        <p class="mt-2 text-center text-sm font-medium">Projeto 2</p>
+      </div>
+      <div class="flex-shrink-0 w-1/5 h-60 rounded-lg shadow-lg">
+        <img src="/path-to-image14.jpg" alt="Destaque 3" class="w-full h-full object-cover rounded-lg">
+        <p class="mt-2 text-center text-sm font-medium">Projeto 3</p>
+      </div>
+      <div class="flex-shrink-0 w-1/5 h-60 rounded-lg shadow-lg">
+        <img src="/path-to-image15.jpg" alt="Destaque 4" class="w-full h-full object-cover rounded-lg">
+        <p class="mt-2 text-center text-sm font-medium">Projeto 4</p>
+      </div>
+ 
+    </div>
+  </section>
+
+  
+
+
+ 
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-600 text-white py-8">
+   <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8">
+     <!-- Logo com frase e bordão -->
+     <div class="text-center md:text-left">
+      <img alt="Logo RizonTec" class="w-32 mx-auto md:mx-0" src="Rtec1.png"/>
+      <p class="mt-4 text-gray-200">
+       Inovação e excelência em soluções digitais. Confie em quem entende do digital e eleve sua presença online com RizonTec.
+      </p>
+     </div>
+     <!-- Localização -->
+     <div class="text-center md:text-left">
+      <h3 class="text-xl font-bold">
+       Localização
+      </h3>
+      <p class="mt-2 text-gray-200">
+       Av. Luiz Boiteux Piazza, 130 - Cachoeira do Bom Jesus, Florianópolis - SC, 88056-000
+      </p>
+     </div>
+     <!-- Bordão da Empresa -->
+     <div class="text-center md:text-left">
+      <h3 class="text-xl font-bold">
+       Confie em quem entende do digital.
+      </h3>
+      <p class="mt-4 text-gray-200">
+       RizonTec: Elevando sua presença online com soluções digitais inovadoras.
+      </p>
+     </div>
+     <!-- Redes Sociais -->
+     <div class="text-center md:text-center">
+      <h3 class="text-xl font-bold">
+       Siga-nos nas Redes Sociais
+      </h3>
+      <div class="mt-4 flex justify-center md:justify-center space-x-4">
+       <a class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200" href="#">
+        <i class="fab fa-instagram">
+        </i>
+       </a>
+       <a class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200" href="#">
+        <i class="fab fa-facebook-f">
+        </i>
+       </a>
+       <a class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200" href="#">
+        <i class="fab fa-whatsapp">
+        </i>
+       </a>
+       <a class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200" href="#">
+        <i class="fab fa-linkedin-in">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="text-center mt-4 text-gray-200">
+    © 2024 RizonTec. Todos os direitos reservados.
+   </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+  </script>
+
+
+
+ 
+
+  <script>
+   let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add('hidden-nav');
+        navbar.classList.remove('visible-nav');
+      } else {
+        navbar.classList.add('visible-nav');
+        navbar.classList.remove('hidden-nav');
+      }
+      lastScrollTop = scrollTop;
+    });
+
+    menuButton.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const classicSwiper = new Swiper('.classic-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+
+    const modernSwiper = new Swiper('.modern-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+
+    const minimalistSwiper = new Swiper('.minimalist-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+
+    const contemporarySwiper = new Swiper('.contemporary-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+  </script>
+ </body>
+</html>
