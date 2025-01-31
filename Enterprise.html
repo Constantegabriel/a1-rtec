@@ -1,0 +1,503 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   RizonLux
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <style>
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+     .hidden-nav {
+       transform: translateY(-100%);
+       transition: transform 0.3s ease-in-out;
+     }
+     .visible-nav {
+       transform: translateY(0);
+       transition: transform 0.3s ease-in-out;
+     }
+     .swiper-pagination-bullet {
+            width: 20px;
+            height: 4px;
+            background: #000;
+            display: inline-block;
+            margin: 0 2px;
+            border-radius: 0;
+        }
+        .swiper-pagination-bullet-active {
+            background: #000;
+        }
+   </style>
+  </link>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10 top-0" id="navbar">
+   <div class="container mx-auto px-4 py-6 flex justify-between items-center" style="padding-left: 10%; padding-right: 10%;">
+    <div class="text-2xl font-bold text-gray-800">
+     RizonLux
+    </div>
+    <div class="hidden md:flex space-x-8">
+     <a class="text-gray-600 hover:text-gray-800" href="index.html">
+      Inicio
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="services.html">
+      Serviços
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="gallery.html">
+      Galeria
+     </a>
+     <a class="text-gray-600 hover:text-gray-800" href="Enterprise.html">
+      Empresa
+     </a>
+    </div>
+    <a class="hidden md:block bg-orange-500 text-white px-4 py-2 rounded-full" href="#">
+     Contact Us
+    </a>
+    <button class="md:hidden text-gray-800 focus:outline-none" id="menu-button">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden" id="mobile-menu">
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="index.html">
+     Inicio
+    </a>
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="services.html">
+     Serviços
+    </a>
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="gallery.html">
+     Galeria
+    </a>
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="Enterprise.html">
+     Empresa
+    </a>
+    <a class="block px-4 py-2 bg-orange-500 text-white rounded-full" href="#">
+     Contact Us
+    </a>
+   </div>
+  </nav>
+
+
+
+
+  <!-- Swiper Section -->
+  <section class="swiper-container w-full h-screen mt-16 md:mt-0 overflow-hidden">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide relative">
+      <img alt="Classic interior design" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/fkhbgNkotOy4MCP5LN8YDwZyrBkaUe06ra6HLXpLgZg1FVIUA.jpg"/>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50">
+       <h2 class="text-4xl font-bold">
+        Classic Design
+       </h2>
+       <p class="mt-4 text-lg">
+        Experience the timeless elegance of classic interior design.
+       </p>
+       <a class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="swiper-slide relative">
+      <img alt="Modern interior design" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/nEMIKDgzOi6bD1VfQGegU0Y2RoPbqYdNZfHVePs1SxtiXUhQB.jpg"/>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50">
+       <h2 class="text-4xl font-bold">
+        Modern Design
+       </h2>
+       <p class="mt-4 text-lg">
+        Discover the sleek and stylish world of modern interior design.
+       </p>
+       <a class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="swiper-slide relative">
+      <img alt="Minimalist interior design" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/5jnzkVhXsKJOLRkkDpbbthBNnSOulIPvE4PQA7oGYmf9iKEKA.jpg"/>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50">
+       <h2 class="text-4xl font-bold">
+        Minimalist Design
+       </h2>
+       <p class="mt-4 text-lg">
+        Embrace simplicity and functionality with minimalist design.
+       </p>
+       <a class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="swiper-pagination">
+    </div>
+   </section>
+ 
+
+
+
+  <div class="container mx-auto px-4 py-40">
+    <div class="text-center">
+     <h1 class="text-4xl font-bold text-orange-500 mb-4">
+      Sobre Nossa Empresa
+     </h1>
+     <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+      Saiba mais sobre nossa empresa, nossos valores e nossa missão. Estamos dedicados a fornecer os melhores serviços e soluções para nossos clientes.
+     </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+     <div>
+      <img alt="Prédio da empresa" class="w-full h-full object-cover" src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?cs=srgb&dl=pexels-sevenstormphotography-443383.jpg&fm=jpg"/>
+     </div>
+     <div>
+      <h2 class="text-2xl font-bold text-orange-500 mb-4">
+       Nossa Missão
+      </h2>
+      <p class="text-gray-600 mb-4">
+       Nossa missão é entregar projetos de alta qualidade que agreguem valor aos nossos clientes e melhorem as comunidades que servimos. Nos esforçamos para inovar e liderar em nosso setor, estabelecendo novos padrões de excelência.
+      </p>
+      <h2 class="text-2xl font-bold text-orange-500 mb-4">
+       Nossos Valores
+      </h2>
+      <ul class="list-disc list-inside text-gray-600 mb-4">
+       <li>
+        Integridade: Mantemos os mais altos padrões de integridade em todas as nossas ações.
+       </li>
+       <li>
+        Qualidade: Fornecemos produtos excepcionais e um serviço inigualável que oferecem valor premium aos nossos clientes.
+       </li>
+       <li>
+        Inovação: Promovemos uma cultura de inovação e melhoria contínua.
+       </li>
+       <li>
+        Trabalho em equipe: Trabalhamos juntos, além das fronteiras, para atender às necessidades de nossos clientes e ajudar nossa empresa a vencer.
+       </li>
+      </ul>
+      <h2 class="text-2xl font-bold text-orange-500 mb-4">
+       Nossa Equipe
+      </h2>
+      <p class="text-gray-600">
+       Nossa equipe é composta por profissionais experientes que são apaixonados pelo que fazem. Estamos comprometidos em entregar resultados excepcionais e construir relacionamentos duradouros com nossos clientes.
+      </p>
+     </div>
+    </div>
+
+
+    <div class="mt-8 py-16 bg-white">
+     <h2 class="text-3xl font-bold text-orange-500 mb-16 text-center">
+      Conheça Nossa Equipe
+     </h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center">
+       <img alt="Membro da equipe 1" class="w-32 h-32 rounded-full mx-auto mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvfGUdlgIVeFxpPXSv6lJn8aXpztsx0OvMt-d5UuVStjXz9jb_xrha0jIPu1KX8Mw8Kzc&usqp=CAU"/>
+       <h3 class="text-lg font-bold text-orange-500">
+        Elon Musk
+       </h3>
+       <p class="text-gray-600">
+        CEO
+       </p>
+      </div>
+      <div class="text-center">
+       <img alt="Membro da equipe 2" class="w-32 h-32 rounded-full mx-auto mb-4" src="data:image/jpeg;base64,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"/>
+       <h3 class="text-lg font-bold text-orange-500">
+        Steve Jobs
+       </h3>
+       <p class="text-gray-600">
+        CTO
+       </p>
+      </div>
+      <div class="text-center">
+       <img alt="Membro da equipe 3" class="w-32 h-32 rounded-full mx-auto mb-4" src="data:image/jpeg;base64,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"/>
+       <h3 class="text-lg font-bold text-orange-500">
+        Bill Gates
+       </h3>
+       <p class="text-gray-600">
+        COO
+       </p>
+      </div>
+      <div class="text-center">
+       <img alt="Membro da equipe 4" class="w-32 h-32 rounded-full mx-auto mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI-d6zkW-6FQ7lb4zKO0hoefBAzTidO6b171H9C6oWds1nUOqigUJ2KIeStuADq5Xj7Pg&usqp=CAU"/>
+       <h3 class="text-lg font-bold text-orange-500">
+        Mark Zuckerberg
+       </h3>
+       <p class="text-gray-600">
+        CMO
+       </p>
+      </div>
+     </div>
+    </div>
+
+
+    <div class="mt-8 py-16">
+     <h2 class="text-5xl font-bold text-orange-500 mb-4 text-center pb-20">
+      Nossa História
+     </h2>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Fundada em 2000
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Nossa empresa foi fundada em 2000 com a visão de criar soluções arquitetônicas inovadoras e sustentáveis. Ao longo dos anos, crescemos e expandimos nossos serviços, sempre permanecendo fiéis aos nossos valores fundamentais.
+       </p>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Principais Marcos
+       </h3>
+       <ul class="list-disc list-inside text-gray-600 mb-4">
+        <li>
+         2005: Concluímos nosso primeiro grande projeto, um edifício de escritórios de última geração.
+        </li>
+        <li>
+         2010: Expandimos nossos serviços para incluir projetos residenciais.
+        </li>
+        <li>
+         2015: Abrimos um novo escritório em uma grande cidade para melhor atender nossos clientes.
+        </li>
+        <li>
+         2020: Celebramos 20 anos de excelência no setor.
+        </li>
+       </ul>
+      </div>
+      <div>
+       <img alt="História da empresa" class="w-full h-full object-cover" src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?cs=srgb&dl=pexels-sevenstormphotography-443383.jpg&fm=jpg"/>
+      </div>
+     </div>
+    </div>
+
+
+    <div class="mt-8 py-16">
+     <h2 class="text-4xl font-bold text-orange-500 mb-4 text-center pb-20">
+      Nossos Serviços
+     </h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="text-center">
+       <i class="fas fa-building text-4xl text-orange-500 mb-4">
+       </i>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Arquitetura Comercial
+       </h3>
+       <p class="text-gray-600">
+        Projetamos espaços comerciais inovadores e funcionais que atendem às necessidades das empresas e seus clientes.
+       </p>
+      </div>
+      <div class="text-center">
+       <i class="fas fa-home text-4xl text-orange-500 mb-4">
+       </i>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Arquitetura Residencial
+       </h3>
+       <p class="text-gray-600">
+        Nossos projetos residenciais focam em criar casas confortáveis e bonitas que refletem os estilos de vida únicos de nossos clientes.
+       </p>
+      </div>
+      <div class="text-center">
+       <i class="fas fa-pencil-ruler text-4xl text-orange-500 mb-4">
+       </i>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Design de Interiores
+       </h3>
+       <p class="text-gray-600">
+        Oferecemos serviços de design de interiores que melhoram a funcionalidade e a estética de qualquer espaço.
+       </p>
+      </div>
+      <div class="text-center">
+       <i class="fas fa-tree text-4xl text-orange-500 mb-4">
+       </i>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Arquitetura Paisagística
+       </h3>
+       <p class="text-gray-600">
+        Nossos serviços de arquitetura paisagística criam espaços externos bonitos e sustentáveis.
+       </p>
+      </div>
+      <div class="text-center">
+       <i class="fas fa-city text-4xl text-orange-500 mb-4">
+       </i>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Planejamento Urbano
+       </h3>
+       <p class="text-gray-600">
+        Fornecemos serviços de planejamento urbano que promovem comunidades sustentáveis e habitáveis.
+       </p>
+      </div>
+      <div class="text-center">
+       <i class="fas fa-lightbulb text-4xl text-orange-500 mb-4">
+       </i>
+       <h3 class="text-xl font-bold text-orange-500 mb-2">
+        Serviços de Consultoria
+       </h3>
+       <p class="text-gray-600">
+        Nossos serviços de consultoria ajudam os clientes a navegar pelas complexidades dos projetos arquitetônicos.
+       </p>
+      </div>
+     </div>
+    </div>
+
+
+    <div class="mt-8 py-16 bg-gray-200">
+        <h2 class="text-4xl font-bold text-orange-500 mb-4 text-center pb-16">
+         Contate-Nos
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+         <div>
+          <h3 class="text-xl font-bold text-orange-500 mb-2">
+           Entre em Contato
+          </h3>
+          <p class="text-gray-600 mb-4">
+           Adoraríamos ouvir de você. Se você tiver alguma dúvida sobre nossos serviços, precisar de assistência com um projeto ou apenas quiser dizer olá, sinta-se à vontade para nos contatar.
+          </p>
+          <form>
+           <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+             Nome
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text"/>
+           </div>
+           <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+             Email
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email"/>
+           </div>
+           <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+             Mensagem
+            </label>
+            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4">
+            </textarea>
+           </div>
+           <div class="text-center">
+            <button class="bg-orange-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+             Enviar Mensagem
+            </button>
+           </div>
+          </form>
+         </div>
+         <div>
+          <h3 class="text-xl font-bold text-orange-500 mb-2">
+           Nosso Escritório
+          </h3>
+          <p class="text-gray-600 mb-4">
+           Rua Arquitetura, 123
+           <br/>
+           Cidade, Estado, 12345
+           <br/>
+           Telefone: (123) 456-7890
+           <br/>
+           Email: info@empresa.com
+          </p>
+          <div class="w-full h-64">
+           <iframe allowfullscreen="" class="w-full h-full" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d442.65170134337535!2d-48.4418082686121!3d-27.43145282247526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952743b2a1445469%3A0x3701e8d171c4c3a1!2sTomato%20Passeio%20Sapiens!5e0!3m2!1spt-BR!2sbr!4v1735516533169!5m2!1spt-BR!2sbr" style="border:0">
+           </iframe>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+
+ 
+
+
+   <footer class="bg-gray-400 text-white py-8">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <!-- Logo com frase e bordão -->
+            <div class="text-center md:text-left">
+                <img src="Rtec1.png" alt="Logo RizonTec" class="w-32 mx-auto md:mx-0">
+                <p class="mt-4 text-gray-200">Inovação e excelência em soluções digitais. Confie em quem entende do digital e eleve sua presença online com RizonTec.</p>
+            </div>
+
+            <!-- Localização -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold">Localização</h3>
+                <p class="mt-2 text-gray-200">Av. Luiz Boiteux Piazza, 130 - Cachoeira do Bom Jesus, Florianópolis - SC, 88056-000</p>
+            </div>
+
+            <!-- Bordão da Empresa -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold">Confie em quem entende do digital.</h3>
+                <p class="mt-4 text-gray-200">RizonTec: Elevando sua presença online com soluções digitais inovadoras.</p>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="text-center md:text-center">
+                <h3 class="text-xl font-bold">Siga-nos nas Redes Sociais</h3>
+                <div class="mt-4 flex justify-center md:justify-center space-x-4">
+                    <a href="#" class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="block w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-200">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4 text-gray-200">
+        &copy; 2024 RizonTec. Todos os direitos reservados.
+    </div>
+</footer>
+ 
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+</script>
+<script>
+ let lastScrollTop = 0;
+      const navbar = document.getElementById('navbar');
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      window.addEventListener('scroll', function() {
+          let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if (scrollTop > lastScrollTop) {
+              navbar.classList.add('hidden-nav');
+              navbar.classList.remove('visible-nav');
+          } else {
+              navbar.classList.add('visible-nav');
+              navbar.classList.remove('hidden-nav');
+          }
+          lastScrollTop = scrollTop;
+      });
+
+      menuButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+      });
+
+      const swiper = new Swiper('.swiper-container', {
+          loop: true,
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+          slidesPerView: 1,
+      });
+
+      const feedbackSwiper = new Swiper('.feedback-swiper', {
+          loop: true,
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+      });
+</script>

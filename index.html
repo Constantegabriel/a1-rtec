@@ -23,7 +23,17 @@ body {
        transform: translateY(0);
        transition: transform 0.3s ease-in-out;
      }
-     
+     .swiper-pagination-bullet {
+            width: 20px;
+            height: 4px;
+            background: #000;
+            display: inline-block;
+            margin: 0 2px;
+            border-radius: 0;
+        }
+        .swiper-pagination-bullet-active {
+            background: #000;
+        }
    </style>
   </link>
  </head>
@@ -44,11 +54,11 @@ body {
      <a class="text-gray-600 hover:text-gray-800" href="gallery.html">
       Galeria
      </a>
-     <a class="text-gray-600 hover:text-gray-800" href="pricing.html">
-      Preços
+     <a class="text-gray-600 hover:text-gray-800" href="Enterprise.html">
+      Empresa
      </a>
     </div>
-    <a class="hidden md:block bg-green-600 text-white px-4 py-2 rounded-full" href="#">
+    <a class="hidden md:block bg-orange-500 text-white px-4 py-2 rounded-full" href="#">
      Contact Us
     </a>
     <button class="md:hidden text-gray-800 focus:outline-none" id="menu-button">
@@ -57,19 +67,19 @@ body {
     </button>
    </div>
    <div class="hidden md:hidden" id="mobile-menu">
-    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
-     About
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="index.html">
+     Inicio
     </a>
-    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
-     Services
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="services.html">
+     Serviços
     </a>
-    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
-     Gallery
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="gallery.html">
+     Galeria
     </a>
-    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="#">
-     Pricing
+    <a class="block px-4 py-2 text-gray-600 hover:text-gray-800" href="Enterprise.html">
+     Empresa
     </a>
-    <a class="block px-4 py-2 bg-green-600 text-white rounded-full" href="#">
+    <a class="block px-4 py-2 bg-orange-500 text-white rounded-full" href="#">
      Contact Us
     </a>
    </div>
@@ -86,7 +96,7 @@ body {
       <p class="mt-4 text-lg">
        Experience the timeless elegance of classic interior design.
       </p>
-      <a class="mt-6 bg-green-600 text-white px-6 py-3 rounded-full" href="#">
+      <a class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full" href="#">
        Learn More
       </a>
      </div>
@@ -100,7 +110,7 @@ body {
       <p class="mt-4 text-lg">
        Discover the sleek and stylish world of modern interior design.
       </p>
-      <a class="mt-6 bg-green-600 text-white px-6 py-3 rounded-full" href="#">
+      <a class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full" href="#">
        Learn More
       </a>
      </div>
@@ -114,7 +124,7 @@ body {
       <p class="mt-4 text-lg">
        Embrace simplicity and functionality with minimalist design.
       </p>
-      <a class="mt-6 bg-green-600 text-white px-6 py-3 rounded-full" href="#">
+      <a class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full" href="#">
        Learn More
       </a>
      </div>
@@ -123,59 +133,60 @@ body {
    <div class="swiper-pagination">
    </div>
   </section>
-  <!-- Categories Section -->
-  <section class="container mx-auto px-4 py-16 text-center">
-   <div class="mb-8">
-    <h2 class="text-2xl font-bold text-gray-800">
-     Categories
-    </h2>
-    <p class="text-gray-600 max-w-lg mx-auto">
-     Designing an architectural interior involves integrating functionality, aesthetics, and user experience to create spaces that are both visually appealing and practical. Here’s a step-by-step guide to designing an architectural interior.
-    </p>
-   </div>
-   <h3 class="text-xl font-bold text-gray-800 mb-8">
-    Architecture Interior
-   </h3>
-   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-    <a class="bg-white shadow-md rounded-lg overflow-hidden" href="gallery">
-     <img alt="Classic interior design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/fkhbgNkotOy4MCP5LN8YDwZyrBkaUe06ra6HLXpLgZg1FVIUA.jpg" width="400"/>
-     <div class="p-4">
-      <h4 class="text-lg font-bold text-gray-800">
-       Classic
-      </h4>
-     </div>
-    </a>
-    <a class="bg-white shadow-md rounded-lg overflow-hidden" href="gallery">
-     <img alt="Modern interior design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/nEMIKDgzOi6bD1VfQGegU0Y2RoPbqYdNZfHVePs1SxtiXUhQB.jpg" width="400"/>
-     <div class="p-4">
-      <h4 class="text-lg font-bold text-gray-800">
-       Modern
-      </h4>
-     </div>
-    </a>
-    <a class="bg-white shadow-md rounded-lg overflow-hidden" href="gallery">
-     <img alt="Minimalist interior design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/5jnzkVhXsKJOLRkkDpbbthBNnSOulIPvE4PQA7oGYmf9iKEKA.jpg" width="400"/>
-     <div class="p-4">
-      <h4 class="text-lg font-bold text-gray-800">
-       Minimalist
-      </h4>
-     </div>
-    </a>
-    <a class="bg-white shadow-md rounded-lg overflow-hidden" href="gallery">
-     <img alt="Contemporary interior design" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/t6UpPcYWADY4BxaboXXpPOIX8HfOAstLtbizRN27sTg8iKEKA.jpg" width="400"/>
-     <div class="p-4">
-      <h4 class="text-lg font-bold text-gray-800">
-       Contemporary
-      </h4>
-     </div>
-    </a>
-   </div>
-  </section>
+
+
+
+
+
+<!-- Sobre a Empresa -->
+<section class="about py-16 bg-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-6">Quem Somos</h2>
+        <p class="text-xl mb-6">A RizonLux é especializada em projetos de arquitetura e design de interiores, criando espaços únicos que refletem estilo e funcionalidade.</p>
+        <a href="/empresa" class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-700">Saiba Mais Sobre Nós</a>
+    </div>
+</section>
+
+<!-- Serviços -->
+<section class="services bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-6">Nossos Serviços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Serviço 1 -->
+            <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg" alt="Serviço de Criação de Projetos" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Projetos de Arquitetura</h3>
+                <p class="mb-4">Desenvolvemos projetos arquitetônicos inovadores e personalizados para seus espaços.</p>
+                <a href="/services.html" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-700">Saiba Mais</a>
+            </div>
+            <!-- Serviço 2 -->
+            <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg" alt="Serviço de Design de Interiores" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Design de Interiores</h3>
+                <p class="mb-4">Transforme seus ambientes com soluções de design sofisticadas e funcionais.</p>
+                <a href="/services.html" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-700">Saiba Mais</a>
+            </div>
+            <!-- Serviço 3 -->
+            <div class="service-card bg-white p-6 rounded-lg shadow-lg">
+                <img src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg" alt="Serviço de Consultoria" class="w-full h-40 object-cover mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Consultoria em Arquitetura</h3>
+                <p class="mb-4">Consultoria especializada para projetos de arquitetura e interiores de alto padrão.</p>
+                <a href="/services.html" class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-700">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
   <!-- Stats Section -->
   <section class="bg-white py-16">
    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
     <div>
-     <i class="fas fa-project-diagram text-4xl text-green-600 mb-4">
+     <i class="fas fa-project-diagram text-4xl text-orange-500 mb-4">
      </i>
      <h3 class="text-3xl font-bold text-gray-800">
       8K
@@ -188,7 +199,7 @@ body {
      </p>
     </div>
     <div>
-     <i class="fas fa-calendar-alt text-4xl text-green-600 mb-4">
+     <i class="fas fa-calendar-alt text-4xl text-orange-500 mb-4">
      </i>
      <h3 class="text-3xl font-bold text-gray-800">
       30
@@ -201,7 +212,7 @@ body {
      </p>
     </div>
     <div>
-     <i class="fas fa-smile text-4xl text-green-600 mb-4">
+     <i class="fas fa-smile text-4xl text-orange-500 mb-4">
      </i>
      <h3 class="text-3xl font-bold text-gray-800">
       16K
@@ -214,7 +225,7 @@ body {
      </p>
     </div>
     <div>
-     <i class="fas fa-thumbs-up text-4xl text-green-600 mb-4">
+     <i class="fas fa-thumbs-up text-4xl text-orange-500 mb-4">
      </i>
      <h3 class="text-3xl font-bold text-gray-800">
       99%
@@ -298,55 +309,91 @@ body {
     </div>
    </div>
   </section>
-  <!-- Team Section -->
-  <section class="bg-white py-16">
-   <div class="container mx-auto px-4 text-center">
-    <h2 class="text-2xl font-bold text-gray-800 mb-8">
-     Our Team
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-     <div class="bg-gray-100 shadow-md rounded-lg p-8">
-      <img alt="Team member photo" class="w-32 h-32 rounded-full mx-auto mb-4" height="150" src="ceo.jpeg" width="150"/>
-      <h4 class="text-lg font-bold text-gray-800">
-        Gabriel Constante
-      </h4>
-      <p class="text-gray-600">
-       Lead Designer
-      </p>
+
+
+
+
+  <div class="container mx-auto px-4 py-8">
+    <div class="text-center">
+     <p class="text-orange-700 font-bold text-lg mb-2">
+      — Our Latest
+     </p>
+     <h1 class="text-4xl font-bold text-orange-500 mb-4">
+      Project Overview
+     </h1>
+     <p class="text-gray-600 max-w-8xl mx-auto mb-8">
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+     </p>
+ 
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="relative sm:row-span-2 sm:h-172 h-164">
+      <img alt="Tall building with a cityscape background" class="w-full h-full object-cover" src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-orange-500 bg-opacity-75 text-white p-4">
+       <h2 class="text-lg font-bold">
+        Arquitetura Paisagista
+       </h2>
+       <p>
+        @RizonTec
+       </p>
+      </div>
      </div>
-     <div class="bg-gray-100 shadow-md rounded-lg p-8">
-      <img alt="Team member photo" class="w-32 h-32 rounded-full mx-auto mb-4" height="150" src="ceo.jpeg" width="150"/>
-      <h4 class="text-lg font-bold text-gray-800">
-        Gabriel Constante
-      </h4>
-      <p class="text-gray-600">
-       Project Manager
-      </p>
+     <div class="relative sm:col-span-2 sm:h-48 h-64">
+      <img alt="Modern building with glass windows" class="w-full h-full object-cover" src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-orange-500 bg-opacity-75 text-white p-4">
+       <h2 class="text-lg font-bold">
+        Arquitetura Paisagista
+       </h2>
+       <p>
+        @RizonTec
+       </p>
+      </div>
      </div>
-     <div class="bg-gray-100 shadow-md rounded-lg p-8">
-      <img alt="Team member photo" class="w-32 h-32 rounded-full mx-auto mb-4" height="150" src="ceo.jpeg" width="150"/>
-      <h4 class="text-lg font-bold text-gray-800">
-        Gabriel Constante
-      </h4>
-      <p class="text-gray-600">
-       Interior Designer
-      </p>
+     <div class="relative sm:h-58 h-64">
+      <img alt="Skyscraper with a blue sky background" class="w-full h-full object-cover" src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-orange-500 bg-opacity-75 text-white p-4">
+       <h2 class="text-lg font-bold">
+        Arquitetura Paisagista
+       </h2>
+       <p>
+        @RizonTec
+       </p>
+      </div>
      </div>
-     <div class="bg-gray-100 shadow-md rounded-lg p-8">
-      <img alt="Team member photo" class="w-32 h-32 rounded-full mx-auto mb-4" height="150" src="ceo.jpeg" width="150"/>
-      <h4 class="text-lg font-bold text-gray-800">
-        Gabriel Constante
-      </h4>
-      <p class="text-gray-600">
-       Architect
-      </p>
+     <div class="relative sm:col-span-1 sm:row-span-2 sm:h-30 h-30">
+      <img alt="Modern building with glass windows" class="w-full h-full object-cover" src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-orange-500 bg-opacity-75 text-white p-4">
+       <h2 class="text-lg font-bold">
+        Arquitetura Paisagista
+       </h2>
+       <p>
+        @RizonTec
+       </p>
+      </div>
+     </div>
+     <div class="relative sm:col-span-2 sm:row-span-1 sm:h-58 h-64">
+      <img alt="Skyscraper with a blue sky background" class="w-full h-full object-cover" src="https://abreu.digital/wp-content/uploads/2020/12/revista-abreu-ed04-alex-hanazaki-residencial-18.jpg"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-orange-500 bg-opacity-75 text-white p-4">
+       <h2 class="text-lg font-bold">
+        Arquitetura Paisagista
+       </h2>
+       <p>
+        @RizonTec
+       </p>
+      </div>
      </div>
     </div>
    </div>
-  </section>
 
 
-  <footer class="bg-gray-600 text-white py-8">
+
+
+
+  
+ 
+
+
+  <footer class="bg-gray-400 text-white py-8">
     <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-4 gap-8">
             <!-- Logo com frase e bordão -->
@@ -393,6 +440,7 @@ body {
 </footer>
 
 </body>
+</html>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
   </script>
